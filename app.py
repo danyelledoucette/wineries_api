@@ -33,7 +33,7 @@ def home():
 
 @app.route('/api/v1/resources/wines/all', methods=['GET'])
 def api_all():
-    conn = sqlite3.connect('wines copy.db')
+    conn = sqlite3.connect('wines.db')
     conn.row_factory = dict_factory
     cur = conn.cursor()
     all_wines = cur.execute('SELECT * FROM wine;').fetchall()
