@@ -16,10 +16,9 @@ def dict_factory(cursor, row):
 def home():
     '''<h1>wines</h1>'''
     return (
-        f"Avaliable Routes:<br/>"
+        f"Available Routes:<br/>"
         f"/api/v1/resources/wines/all<br/>"
-        f"Avliable Searches:<br/>"
-        f"/api/v1/resources/wines<br/>"
+        f"Available Searches:<br/>"
         f"/api/v1/resources/wines?country=Australia<br/>"
         f"/api/v1/resources/wines?country=US<br/>"
         f"/api/v1/resources/wines?country=Canada<br/>"
